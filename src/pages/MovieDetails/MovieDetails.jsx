@@ -1,7 +1,7 @@
 import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Suspense } from 'react';
-import { getMovies } from 'api/fetchAPI';
+import { getMovie } from 'api/fetchAPI';
 
 import {
   Wrapper,
@@ -14,7 +14,7 @@ import {
   ListForAddInfo,
   NavItem,
   BtnLink,
-} from './MoviesDetails.styled';
+} from './MovieDetails.styled';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -24,7 +24,7 @@ const MovieDetails = () => {
 
   useEffect(() => {
     if (movieId) {
-      getMovies(Number(movieId))
+      getMovie(Number(movieId))
         .then(data => setMovie(data))
         .catch(error => console.log(error.message));
     }
@@ -36,12 +36,12 @@ const MovieDetails = () => {
   const { poster_path, title, release_date, overview, genres } = movie;
   return (
     <div>
-      <BtnLink to={backToPageBtn}>Go Back</BtnLink>
+      <BtnLink to={backToPageBtn}>⬅Go back</BtnLink>
       <Wrapper>
         <Image
           src={
             poster_path
-              ? `htpps://image.tmdb.org/t/p/w500/${poster_path}`
+              ? `https://image.tmdb.org/t/p/w500/${poster_path}`
               : `https://via.placeholder.com/200x100`
           }
           alt="{movie.title || movie.name || 'No title'}"
@@ -64,7 +64,10 @@ const MovieDetails = () => {
 
         <ListForAddInfo>
           <li>
-            <NavItem to="cast"></NavItem>
+            <NavItem to="cast">Cast</NavItem>
+          </li>
+          <li>
+            <NavItem to="reviews">Reviews</NavItem>
           </li>
         </ListForAddInfo>
       </WrapperAddInfo>

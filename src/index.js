@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from './components/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/goit-react-hw-05-movies/">
+  <BrowserRouter basename="/goit-react-hw-05-movies">
     <React.StrictMode>
       <Suspense fallback={<div>Loading...</div>}>
         <App />

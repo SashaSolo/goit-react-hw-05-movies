@@ -17,7 +17,7 @@ export const getMoviesBySearch = async query => {
   return response.data;
 };
 
-export const getMovies = async movieId => {
+export const getMovie = async movieId => {
   const response = await axios.get(
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${KEY_API}&language=en-US`
   );
