@@ -7,7 +7,7 @@ import { Movies } from '../pages/Movies/Movies';
 import { NotFound } from 'pages/NotFound/NotFound';
 // import { StyledLink } from './App.Styled';
 
-const MovieDetails = lazy(() => import('../pages/MovieDetails/MovieDetails'));
+const MovieDetails = lazy(() => import('../pages/MoviesDetails/MoviesDetails'));
 const Cast = lazy(() => import('./Cast/Cast'));
 const Review = lazy(() => import('./Reviews/Reviews'));
 
