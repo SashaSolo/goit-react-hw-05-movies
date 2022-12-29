@@ -5,7 +5,6 @@ import { AppBar } from './AppBar/AppBar';
 import { Home } from '../pages/Home/Home';
 import { Movies } from '../pages/Movies/Movies';
 import { NotFound } from 'pages/NotFound/NotFound';
-// import { StyledLink } from './App.Styled';
 
 const MovieDetails = lazy(() => import('../pages/MoviesDetails/MoviesDetails'));
 const Cast = lazy(() => import('./Cast/Cast'));
