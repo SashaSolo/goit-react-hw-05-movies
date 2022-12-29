@@ -20,7 +20,7 @@ const Cast = () => {
 
   return (
     <List>
-      {castList.lenght > 0 &&
+      {castList.length > 0 &&
         castList.map(({ id, name, profile_path, character }) => (
           <ListItem key={id}>
             <Image
@@ -32,11 +32,10 @@ const Cast = () => {
               alt={name}
             />
             <TextName>{name}</TextName>
-            <Text>{character || 'No Info'}</Text>
+            <Text>{character || 'No info'}</Text>
           </ListItem>
         ))}
     </List>
   );
 };
-
 export default Cast;
