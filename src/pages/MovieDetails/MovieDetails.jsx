@@ -36,7 +36,7 @@ const MovieDetails = () => {
   const { poster_path, title, release_date, overview, genres } = movie;
   return (
     <div>
-      <BtnLink to={backToPageBtn}>⬅Go back</BtnLink>
+      <BtnLink to={backToPageBtn}>⬅ back</BtnLink>
       <Wrapper>
         <Image
           src={

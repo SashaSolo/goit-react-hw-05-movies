@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
 export const MoviesList = styled.ul`
   list-style: none;
 `;
@@ -15,6 +16,6 @@ export const NavItemStyled = styled(NavLink)`
   color: #343333;
   &:hover,
   &:focus {
-    color: #f94ae7;
+    color: rgb(247, 64, 2);
   }
 `;

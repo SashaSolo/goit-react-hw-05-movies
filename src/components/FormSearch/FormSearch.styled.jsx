@@ -10,18 +10,18 @@ export const Input = styled.input`
   &:hover,
   &:focus,
   &:active {
-    border-color: #f94ae7;
+    border-color: rgb(247, 64, 2);
   }
 `;
 
 export const Btn = styled.input`
   margin-left: 5px;
   border-radius: 4px;
-  width: 70px;
+  width: 80px;
   background-color: #343333;
   color: #fff;
   &:hover {
-    background-color: #f94ae7;
+    background-color: rgb(247, 64, 2);
     color: #343333;
     font-weight: 700;
   }

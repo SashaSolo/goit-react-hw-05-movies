@@ -18,7 +18,7 @@ export const NavItem = styled(NavLink)`
   color: #343333;
   &:hover,
   &:focus {
-    color: #f94ae7;
+    color: rgb(247, 64, 2);
   }
   &:not(:last-child) {
     margin-right: 10px;
@@ -46,6 +46,6 @@ export const NavItemStyled = styled(NavLink)`
   color: #343333;
   &:hover,
   &:focus {
-    color: #f94ae7;
+    color: rgb(247, 64, 2);
   }
 `;
