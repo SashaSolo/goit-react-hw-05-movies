@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import { NavItemStyled, MoviesList, MovieItem } from './MoviesArray.styled';
+import { NavItemStyled, MoviesList, MovieItem } from './MoviesList.styled';
 
 export const MoviesArray = ({ movies }) => {
   const location = useLocation();

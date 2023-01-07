@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { MoviesArray } from 'components/MoviesArray/MoviesArray';
+import { MoviesArray } from 'components/MoviesList/MoviesList';
 import { getMoviesBySearch } from 'api/fetchAPI';
 import { FormSearch } from 'components/FormSearch/FormSearch';
 
